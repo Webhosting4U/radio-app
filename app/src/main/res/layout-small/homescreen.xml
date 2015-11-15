@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d6d7d7">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topBox"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#FFFFFF">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:id="@+id/imageView"
+                android:src="@drawable/img_logo" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="31dp"
+        android:background="#d6d7d7"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/midleBox"
+        android:weightSum="1"
+        android:background="#d6d7d7">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton3"
+            android:src="@drawable/radio64"
+            android:onClick="liveButton"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton2"
+            android:src="@drawable/previous64"
+            android:onClick="recentTracksButton"
+            android:layout_weight="0"
+            android:layout_marginLeft="25dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageButton4"
+            android:src="@drawable/blog"
+            android:onClick="blogButton"
+            android:layout_marginLeft="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d6d7d7">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/midleBox2">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Live"
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textIsSelectable="false"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Recent Tracks"
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:autoText="false"
+                android:gravity="center"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Blog"
+                android:id="@+id/textView3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/midleBox3"
+        android:background="#d6d7d7">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton5"
+            android:src="@drawable/hearth64"
+            android:onClick="afierosisButton"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton6"
+            android:src="@drawable/contact64"
+            android:onClick="contactButton"
+            android:layout_marginLeft="25dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton7"
+            android:src="@drawable/www64"
+            android:onClick="wwwButton"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/midleBox4"
+        android:background="#d6d7d7">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Aφιερώσεις"
+            android:id="@+id/textView4"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Contact"
+            android:id="@+id/textView5"
+            android:layout_weight="1"
+            android:autoText="false"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="www"
+            android:id="@+id/textView6"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/midleBox5"
+        android:background="#d6d7d7">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/fbButton"
+            android:src="@drawable/facebook64"
+            android:onClick="facebookButton"
+            android:layout_marginLeft="10dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton9"
+            android:src="@drawable/about"
+            android:onClick="aboutButton"
+            android:layout_marginLeft="25dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageButton10"
+            android:src="@drawable/twitter64"
+            android:onClick="twitterButton"
+            android:layout_marginLeft="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/midleBox6"
+        android:background="#d6d7d7">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Facebook"
+            android:id="@+id/textView7"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textIsSelectable="false"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="About"
+            android:id="@+id/textView8"
+            android:layout_weight="1"
+            android:autoText="false"
+            android:gravity="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Twitter"
+            android:id="@+id/textView9"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>
